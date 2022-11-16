@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/visi-misi', function () {
+    return view('visi-misi');
+});
+
+Route::get('/struktur', function () {
+    return view('struktur');
+});
+
+Route::get('/sejarah-dayah', function () {
+    return view('sejarah');
+});
+
+Route::get('/identitas-dayah', function () {
+    return view('identitas');
 });
