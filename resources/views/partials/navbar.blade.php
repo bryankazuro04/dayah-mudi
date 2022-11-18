@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
-      <a class="navbar-brand" href="#">Dayah Mudi</a>
+      <a class="navbar-brand" href="/">Yelllaa</a>
 
       <button
         class="navbar-toggler"
