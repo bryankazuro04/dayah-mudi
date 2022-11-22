@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Santri;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,10 +34,6 @@ Route::get('/identitas-dayah', function () {
     return view('identitas');
 });
 
-Route::get('/data-santri', function() {
-    return view('data-santri');
-});
+Route::get('/data-santri', [Santri::class, 'index']);
 
-Route::get('/penambahan-data-santri', function() {
-    return view('form-santri');
-});
+Route::get('/penambahan-data-santri', [Santri::class, 'penambahanDataSantri']);
