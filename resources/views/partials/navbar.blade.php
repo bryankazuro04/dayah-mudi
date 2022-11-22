@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
-      <a class="navbar-brand" href="/">Yelllaa</a>
+      <a class="navbar-brand" href="/">Dayah Mudi</a>
 
       <button
         class="navbar-toggler"
@@ -35,7 +35,7 @@
             <div class="nav-link">Features</div>
 
             <div class="nav-item-content">
-              <a href="">a</a>
+              <a href="/data-santri">Data Santri</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
