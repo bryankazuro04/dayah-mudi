@@ -32,3 +32,11 @@ Route::get('/sejarah-dayah', function () {
 Route::get('/identitas-dayah', function () {
     return view('identitas');
 });
+
+Route::get('/data-santri', function() {
+    return view('data-santri');
+});
+
+Route::get('/penambahan-data-santri', function() {
+    return view('form-santri');
+});
