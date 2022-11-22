@@ -1,9 +1,12 @@
-:root{
+:root {
   --nav-item-background: #befbd8;
   --nav-item-text: #1d1d1d;
+  --black-color: #252525;
+  --white-color: #303030;
 }
 
-a, button {
+a,
+button {
   all: unset;
   cursor: pointer;
 }
@@ -18,15 +21,15 @@ a, button {
 }
 
 @media (width <= 991px) {
-  .navbar .navbar-nav .nav-item.open{
+  .navbar .navbar-nav .nav-item.open {
     background-color: var(--nav-item-background);
     height: auto;
   }
-  
-  .navbar .navbar-nav .nav-item.open .nav-link{
+
+  .navbar .navbar-nav .nav-item.open .nav-link {
     color: var(--nav-item-text) !important;
   }
-  
+
   .navbar .navbar-nav .nav-item .nav-item-content {
     padding-left: 1rem;
     background-color: var(--nav-item-background);
@@ -42,18 +45,21 @@ a, button {
 }
 
 @media (width >= 992px) {
-  .navbar .navbar-nav .nav-link:hover .nav-item:hover{
+  .navbar .navbar-nav .nav-item:hover .nav-link {
     color: var(--nav-item-text) !important;
   }
 
-  .navbar .navbar-nav .nav-item:hover{
-    background-color: #e16433;
-    transition: .2s;
+  .navbar .navbar-nav .nav-item:hover {
+    border-radius: 5px 5px 0 0;
+    background-color: var(--nav-item-background);
+    transition: 0.2s;
   }
-  
+
   .navbar .navbar-nav .nav-item .nav-item-content {
-    padding: 0.5rem;
-    background: var(--nav-item-background);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+    padding: 0.5rem 1rem;
+    background: #fff;
     position: absolute;
     transform: rotateX(-90deg);
     transform-origin: 0 0 0;
