@@ -3,7 +3,7 @@
 @section('main')
     <h1 class="mb-4">Data Santri</h1>
 
-    <table class="table table-hover">
+    <table class="table table-hover text-center" style="table-layout: fixed">
       <thead class="table-success">
         <tr>
           <th scope="col">No.</th>
