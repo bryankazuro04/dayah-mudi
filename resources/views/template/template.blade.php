@@ -8,16 +8,16 @@
   
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="styles/style.css">
   
-  <title>Dayah Mudi</title>
+  @vite(['public/styles/style.css'])
+
+  <title>Dayah Mudi | {{ $title }}</title>
 </head>
   <body>
     @include('partials.navbar')
       
     <main class="mt-3">
-      <div class="container">
+      <div class="container-fluid px-5">
         @yield('main')
       </div>
     </main>
