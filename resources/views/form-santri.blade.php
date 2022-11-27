@@ -1,9 +1,10 @@
 @extends('template.template')
 
 @section('main')
-    <h1 class="mb-4">Penambahan Data Santri</h1>
+  <h1 class="my-5 text-center">Penambahan Data Santri</h1>
 
-    <form action="">
+  <div class="row">
+    <form action="" class="col-6 mx-auto mb-5">
       <div class="mb-3">
         <label for="nama" class="form-label">Nama</label>
         <input type="text" class="form-control" id="nama">
@@ -33,5 +34,8 @@
         <label for="alamat" class="form-label">Alamat</label>
         <textarea name="alamat" id="alamat" cols="3" class="form-control"></textarea>
       </div>
+
+      <button type="submit" class="btn btn-primary">Tambah Data</button>
     </form>
+  </div>
 @endsection
