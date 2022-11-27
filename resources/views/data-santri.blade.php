@@ -17,35 +17,18 @@
       </thead>
 
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Aris Munandar</td>
-          <td>0814665</td>
-          <td>Cot Baroh</td>
-          <td>11-06-1995</td>
-          <td>Tarmizi</td>
-          <td>Cot Baroh Kec. Geulumpang 3 Kab. Pidie, Provinsi Aceh</td>
-        </tr>
-
-        <tr>
-          <th scope="row">2</th>
-          <td>Andri Irawan</td>
-          <td>0815715</td>
-          <td>Cot Baroh</td>
-          <td>26-07-1997</td>
-          <td>Tarmizi</td>
-          <td>Cot Baroh Kec. Geulumpang 3 Kab. Pidie, Provinsi Aceh</td>
-        </tr>
-
-        <tr>
-          <th scope="row">3</th>
-          <td>Ahmad Ramadani</td>
-          <td>0918825</td>
-          <td>Telaga Jernih</td>
-          <td>14-01-1997</td>
-          <td>Selamat</td>
-          <td>Telaga Jernih, Kec. Si Canggang, Kab. Langkat, Provinsi Sumatera Utara</td>
-        </tr>
+        <?php $i = 1 ?>
+        @foreach ($santri as $s)
+          <tr>
+            <th scope="row">{{  $i++; }}</th>
+            <td>{{ $s->nama_santri }}</td>
+            <td>{{ $s->no_induk }}</td>
+            <td>{{ $s->tempat_lahir }}</td>
+            <td>{{ $s->tanggal_lahir }}</td>
+            <td>{{ $s->nama_ortu }}</td>
+            <td>{{ $s->alamat }}</td>
+          </tr>
+        @endforeach
       </tbody>
     </table>
 @endsection
