@@ -74,4 +74,14 @@ button {
   .navbar .navbar-nav .nav-item:hover .nav-item-content {
     transform: rotateX(0);
   }
+
+  .carousel .carousel-item img.placeholder-size {
+    height: 400px;
+    aspect-ratio: 5/3;
+  }
+
+  .content-border {
+    border-inline-end: 1px solid var(--black-color);
+    padding-inline-end: 1rem;
+  }
 }
