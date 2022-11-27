@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
+    <div class="container-fluid px-5">
       <a class="navbar-brand" href="/">Dayah Mudi</a>
 
       <button
@@ -16,10 +16,10 @@
       </button>
 
       <div
-        class="collapse navbar-collapse justify-content-end"
+        class="collapse navbar-collapse justify-content-end me-5"
         id="navbarNav"
       >
-        <ul class="navbar-nav gap-2">
+        <ul class="navbar-nav gap-4">
           <li class="nav-item">
             <div class="nav-link">Profile</div>
 
@@ -46,7 +46,29 @@
             <div class="nav-link">Pricing</div>
 
             <div class="nav-item-content">
+              <a href="/penambahan-data-santri">Form Data Santri</a>
               <a href="">a</a>
+              <a href="">a</a>
+              <a href="">a</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-link">Pricing</div>
+
+            <div class="nav-item-content">
+              <a href="/penambahan-data-santri">Form Data Santri</a>
+              <a href="">a</a>
+              <a href="">a</a>
+              <a href="">a</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-link">Pricing</div>
+
+            <div class="nav-item-content">
+              <a href="/penambahan-data-santri">Form Data Santri</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
