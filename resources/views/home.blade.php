@@ -36,11 +36,11 @@
   <h1 class="my-5">hello world</h1>
 
   <div class="row mb-5">
-    <div class="col-8 content-border">
+    <div class="col-9 content-border">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, molestiae pariatur? Omnis dicta rerum quos eius numquam possimus corrupti suscipit. Sapiente deleniti similique ea pariatur iusto porro, officiis ipsa magni laborum quam assumenda nihil asperiores, necessitatibus deserunt iste recusandae suscipit dicta quis incidunt tempora saepe, itaque magnam neque? Voluptates dicta vero autem nihil. Repudiandae culpa quaerat maxime numquam, eos molestiae ut sunt iure laboriosam est doloremque atque cupiditate aut inventore ipsa unde quibusdam maiores ullam recusandae possimus obcaecati dolorum officia aspernatur quod? Dicta, officiis ad? Illo nisi repudiandae fugiat iste nam obcaecati laudantium deleniti ipsam, omnis, reiciendis aspernatur neque. Culpa?</p>
     </div>
 
-    <div class="col-4">
+    <div class="col-3">
       @include('partials.sidebar')
     </div>
   </div>
