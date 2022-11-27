@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DayahController;
 use App\Http\Controllers\Santri;
+use App\Http\Controllers\SantriController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,26 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [DayahController::class, 'home']);
 
-Route::get('/visi-misi', function () {
-    return view('visi-misi');
-});
+Route::get('/visi-misi', [DayahController::class, 'visiMisi']);
 
-Route::get('/struktur', function () {
-    return view('struktur');
-});
+Route::get('/struktur', [DayahController::class, 'struktur']);
 
-Route::get('/sejarah-dayah', function () {
-    return view('sejarah');
-});
+Route::get('/sejarah-dayah', [DayahController::class, 'sejarah']);
 
-Route::get('/identitas-dayah', function () {
-    return view('identitas');
-});
+Route::get('/identitas-dayah', [DayahController::class, 'identitas']);
 
-Route::get('/data-santri', [Santri::class, 'index']);
+Route::get('/data-santri', [SantriController::class, 'index']);
 
-Route::get('/penambahan-data-santri', [Santri::class, 'penambahanDataSantri']);
+Route::get('/penambahan-data-santri', [SantriController::class, 'penambahanDataSantri']);
