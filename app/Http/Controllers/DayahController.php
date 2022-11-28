@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BeritaModel;
 use Illuminate\Http\Request;
 
 class DayahController extends Controller
@@ -29,5 +30,13 @@ class DayahController extends Controller
     public function identitas()
     {
       return view('identitas', ['title' => 'Identitas']);
+    }
+
+    public function berita()
+    {
+      return view('berita', [
+        'title' => 'Berita',
+        'news' => BeritaModel::all(),
+      ]);
     }
 }
