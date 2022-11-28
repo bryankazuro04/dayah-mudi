@@ -20,6 +20,16 @@ button {
   flex-direction: column;
 }
 
+.card-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
 @media (width <= 991px) {
   .navbar .navbar-nav .nav-item.open {
     background-color: var(--nav-item-background);
