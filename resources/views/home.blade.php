@@ -38,6 +38,19 @@
   <div class="row mb-5">
     <div class="col-9 content-border">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, molestiae pariatur? Omnis dicta rerum quos eius numquam possimus corrupti suscipit. Sapiente deleniti similique ea pariatur iusto porro, officiis ipsa magni laborum quam assumenda nihil asperiores, necessitatibus deserunt iste recusandae suscipit dicta quis incidunt tempora saepe, itaque magnam neque? Voluptates dicta vero autem nihil. Repudiandae culpa quaerat maxime numquam, eos molestiae ut sunt iure laboriosam est doloremque atque cupiditate aut inventore ipsa unde quibusdam maiores ullam recusandae possimus obcaecati dolorum officia aspernatur quod? Dicta, officiis ad? Illo nisi repudiandae fugiat iste nam obcaecati laudantium deleniti ipsam, omnis, reiciendis aspernatur neque. Culpa?</p>
+
+      <div class="row">
+        @foreach ($berita as $b)
+          <div class="col-md-3 mb-4">
+            <article class="card" >
+              <div class="card-body">
+                <h5 class="card-title">{{ $b->judul }}</h5>
+                <p class="card-text">{{ $b->isi_berita }}</p>
+              </div>
+            </article>
+          </div>
+        @endforeach
+      </div>
     </div>
 
     <div class="col-3">
