@@ -28,3 +28,5 @@ Route::get('/identitas-dayah', [DayahController::class, 'identitas']);
 Route::get('/admin/data-santri', [SantriController::class, 'index']);
 
 Route::get('/admin/penambahan-data-santri', [SantriController::class, 'penambahanDataSantri']);
+
+Route::get('/berita', [DayahController::class, 'berita']);
