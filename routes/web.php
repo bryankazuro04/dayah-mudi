@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\DayahController;
-use App\Http\Controllers\Santri;
 use App\Http\Controllers\SantriController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +25,6 @@ Route::get('/sejarah-dayah', [DayahController::class, 'sejarah']);
 
 Route::get('/identitas-dayah', [DayahController::class, 'identitas']);
 
-Route::get('/data-santri', [SantriController::class, 'index']);
+Route::get('/admin/data-santri', [SantriController::class, 'index']);
 
-Route::get('/penambahan-data-santri', [SantriController::class, 'penambahanDataSantri']);
+Route::get('/admin/penambahan-data-santri', [SantriController::class, 'penambahanDataSantri']);
