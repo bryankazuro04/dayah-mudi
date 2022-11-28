@@ -46,7 +46,7 @@
             <div class="nav-link">Pricing</div>
 
             <div class="nav-item-content">
-              <a href="/admin/penambahan-data-santri">Form Data Santri</a>
+              <a href="/berita">Berita</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
