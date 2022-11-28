@@ -10,7 +10,7 @@
   {   
     public function index()
     {
-      return view('data-santri', [
+      return view('admin.data-santri', [
         'title' => 'Data Santri',
         'santri' => SantriModel::all()
       ]);
@@ -18,7 +18,7 @@
 
     public function penambahanDataSantri()
     {
-      return view('form-santri', ['title' => 'Form Penambahan Data Santri']);
+      return view('admin.form-santri', ['title' => 'Form Penambahan Data Santri']);
     }
 
     public function prosesPenambahanDataSantri()
