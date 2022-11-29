@@ -4,35 +4,37 @@
   <h1 class="my-5 text-center">Penambahan Data Santri</h1>
 
   <div class="row">
-    <form action="" class="col-6 mx-auto mb-5">
+    <form action="/admin/penambahan-data-santri" method="POST" class="col-6 mx-auto mb-5">
+      @csrf
+
       <div class="mb-3">
         <label for="nama" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama">
+        <input type="text" name="nama_santri" class="form-control" id="nama">
       </div>
 
       <div class="mb-3">
         <label for="no_induk" class="form-label">No. Induk</label>
-        <input type="number" class="form-control" id="no_induk">
+        <input type="number" name="no_induk" class="form-control" id="no_induk">
       </div>
 
       <div class="mb-3">
         <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-        <input type="text" class="form-control" id="tempat_lahir">
+        <input type="text" name="tempat_lahir" class="form-control" id="tempat_lahir">
       </div>
 
       <div class="mb-3">
         <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-        <input type="date" class="form-control" id="tanggal_lahir">
+        <input type="date" name="tanggal_lahir" class="form-control" id="tanggal_lahir">
       </div>
 
       <div class="mb-3">
         <label for="nama_ortu" class="form-label">Nama Orang tua</label>
-        <input type="text" class="form-control" id="nama_ortu">
+        <input type="text" name="nama_ortu" class="form-control" id="nama_ortu">
       </div>
 
       <div class="mb-3">
         <label for="alamat" class="form-label">Alamat</label>
-        <textarea name="alamat" id="alamat" cols="3" class="form-control"></textarea>
+        <textarea name="alamat" name="alamat" id="alamat" cols="3" class="form-control"></textarea>
       </div>
 
       <button type="submit" class="btn btn-primary">Tambah Data</button>
