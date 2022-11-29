@@ -21,58 +21,58 @@
       >
         <ul class="navbar-nav gap-4">
           <li class="nav-item">
-            <div class="nav-link">Profile</div>
+            <section class="nav-link">Profile</section>
 
-            <div class="nav-item-content gap-1">
+            <section class="nav-item-content gap-1">
               <a href="/identitas-dayah">Identitas</a>
               <a href="/visi-misi">Visi & Misi</a>
               <a href="/sejarah-dayah">Sejarah Singkat</a>
               <a href="/struktur">Struktur Anggota Dayah</a>
-            </div>
+            </section>
           </li>
 
           <li class="nav-item">
-            <div class="nav-link">Features</div>
+            <section class="nav-link">Features</section>
 
-            <div class="nav-item-content">
+            <section class="nav-item-content">
               <a href="/admin/data-santri">Data Santri</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
-            </div>
+            </section>
           </li>
 
           <li class="nav-item">
-            <div class="nav-link">Pricing</div>
+            <section class="nav-link">Pricing</section>
 
-            <div class="nav-item-content">
+            <section class="nav-item-content">
               <a href="/berita">Berita</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
-            </div>
+            </section>
           </li>
 
           <li class="nav-item">
-            <div class="nav-link">Pricing</div>
+            <section class="nav-link">Pricing</section>
 
-            <div class="nav-item-content">
+            <section class="nav-item-content">
               <a href="/admin/penambahan-data-santri">Form Data Santri</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
-            </div>
+            </section>
           </li>
 
           <li class="nav-item">
-            <div class="nav-link">Pricing</div>
+            <section class="nav-link">Pricing</section>
 
-            <div class="nav-item-content">
+            <section class="nav-item-content">
               <a href="/admin/penambahan-data-santri">Form Data Santri</a>
               <a href="">a</a>
               <a href="">a</a>
               <a href="">a</a>
-            </div>
+            </section>
           </li>
         </ul>
       </div>
