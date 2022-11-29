@@ -4,7 +4,7 @@
   <h1 class="my-5 text-center">Penambahan Data Santri</h1>
 
   <div class="row">
-    <form action="/admin/penambahan-data-santri" method="POST" class="col-6 mx-auto mb-5">
+    <form action="/admin/penambahan-data-santri" method="POST" class="col-md-6 mx-auto mb-5">
       @csrf
 
       <div class="mb-3">
