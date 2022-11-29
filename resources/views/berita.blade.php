@@ -6,12 +6,12 @@
     <div class="row">
       @foreach ($berita as $news)
         <div class="col-md-3 mb-4">
-          <div class="card" >
+          <article class="card" >
             <div class="card-body">
               <h5 class="card-title">{{ $news->judul }}</h5>
               <p class="card-text">{{ $news->isi_berita }}</p>
             </div>
-          </div>
+          </article>
         </div>
       @endforeach
     </div>

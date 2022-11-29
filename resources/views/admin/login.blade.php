@@ -6,15 +6,15 @@
 
     <div class="col-lg-5">
       <form action="">
-        <div class="form-floating mb-3">
+        <section class="form-floating mb-3">
           <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
           <label for="floatingInput">Email address</label>
-        </div>
+        </section>
 
-        <div class="form-floating">
+        <section class="form-floating">
           <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
           <label for="floatingPassword">Password</label>
-        </div>
+        </section>
 
         <button type="submit" class="btn btn-primary mt-3">Login</button>
       </form>
