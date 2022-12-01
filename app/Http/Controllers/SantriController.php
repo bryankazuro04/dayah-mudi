@@ -11,14 +11,18 @@
     public function index()
     {
       return view('admin.data-santri', [
-        'title' => 'Data Santri',
-        'santri' => SantriModel::all()
+        'title'   => 'Data Santri',
+        'active'  => 'Data santri',
+        'santri'  => SantriModel::all()
       ]);
     }
 
     public function penambahanDataSantri()
     {
-      return view('admin.form-santri', ['title' => 'Form Penambahan Data Santri']);
+      return view('admin.form-santri', [
+        'title'   => 'Form Penambahan Data Santri',
+        'active'  => 'Form santri'
+      ]);
     }
 
     public function store(Request $request)
