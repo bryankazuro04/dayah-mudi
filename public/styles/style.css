@@ -20,6 +20,11 @@ button {
   flex-direction: column;
 }
 
+.dropdown-account{
+  left: auto !important;
+  right: 0;
+}
+
 .card-text{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -28,6 +33,24 @@ button {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+}
+
+.dashboard-sidebar{
+  border-inline-end: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 4rem;
+  min-height: calc(100vh - 6rem);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dashboard-sidebar .nav-link{
+  color: #333;
+}
+
+.dashboard-sidebar .nav-link.active {
+  color: #2470dc;
 }
 
 @media (width <= 991px) {
