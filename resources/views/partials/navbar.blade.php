@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-md-5">
       <a class="navbar-brand" href="/">Dayah Mudi</a>
 
       <button

@@ -21,9 +21,19 @@
       return view('admin.form-santri', ['title' => 'Form Penambahan Data Santri']);
     }
 
-    public function prosesPenambahanDataSantri()
+    public function store(Request $request)
     {
-      // 
+      $validatedData = $request->validate([
+        'nama_santri'   => 'required', 
+        'no_induk'      => 'required', 
+        'tempat_lahir'  => 'required', 
+        'tanggal_lahir' => 'required', 
+        'nama_ortu'     => 'required', 
+        'alamat'        => 'required' 
+      ]);
+
+      SantriModel::create($validatedData);
+      return redirect('/admin/data-santri');
     }
   }
 ?>
