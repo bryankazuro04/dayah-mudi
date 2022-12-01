@@ -1,4 +1,4 @@
-<aside class="ps-3">
+<aside class="ps-md-3">
   @foreach ($news as $n)
     <a href="#" class="d-flex" style="margin-bottom: 20px">
       <img src="images/placeholder/placeholder-square.png" class="d-inline rounded-3" width="100" alt="">
