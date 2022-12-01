@@ -1,10 +1,10 @@
-@extends('template.template')
+@extends('admin.dashboard')
 
 @section('main')
   <h1 class="my-5 text-center">Penambahan Data Santri</h1>
 
   <div class="row">
-    <form action="/admin/penambahan-data-santri" method="POST" class="col-md-6 mx-auto mb-5">
+    <form action="/admin/penambahan-data-santri" method="POST" class="col-md-7 mx-auto mb-5">
       @csrf
 
       <section class="mb-3">
