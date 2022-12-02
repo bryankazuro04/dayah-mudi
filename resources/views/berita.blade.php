@@ -8,7 +8,9 @@
         <div class="col-md-3 mb-4">
           <article class="card" >
             <div class="card-body">
-              <h5 class="card-title">{{ $news->judul }}</h5>
+              <h5 class="card-title">
+                <a href="/berita/{{ $news->slug }}">{{ $news->judul }}</a>
+              </h5>
               <p class="card-text">{{ $news->isi_berita }}</p>
             </div>
           </article>
