@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\BeritaModel;
+use App\Models\Berita;
 use App\Models\SantriModel;
 use Illuminate\Database\Seeder;
 
@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         SantriModel::factory(20)->create();
-        BeritaModel::factory(15)->create();
+        Berita::factory(20)->create();
 
         // SantriModel::create([
         //     'nama_santri' => 'Aris Munandar',

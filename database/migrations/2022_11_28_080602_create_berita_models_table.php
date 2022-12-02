@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('berita_models', function (Blueprint $table) {
+        Schema::create('beritas', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
             $table->string('slug')->unique();
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('berita_models');
+        Schema::dropIfExists('beritas');
     }
 };
