@@ -11,6 +11,18 @@ button {
   cursor: pointer;
 }
 
+.danger:hover{
+  color: var(--bs-danger);
+}
+
+.info:hover{
+  color: var(--bs-info);
+}
+
+.warning:hover{
+  color: var(--bs-warning);
+}
+
 .navbar {
   z-index: 999;
 }
@@ -49,8 +61,19 @@ button {
   color: #333;
 }
 
+.dashboard-sidebar .nav-link:hover {
+  color: rgba(51, 51, 51, .7);
+}
+
 .dashboard-sidebar .nav-link.active {
   color: #2470dc;
+}
+
+.isi-berita{
+  max-width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media (width <= 991px) {
