@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\BeritaModel;
+use App\Models\Berita;
 use Illuminate\Http\Request;
 
 class DayahController extends Controller
 {
   public function __construct()
   {
-    $this->berita = BeritaModel::latest()->limit(5)->get();
+    $this->berita = Berita::latest()->limit(5)->get();
   }
   
   public function home()
@@ -17,7 +17,7 @@ class DayahController extends Controller
     return view('home', [
       'title'   => 'Home',
       'news'    => $this->berita,
-      'berita'  => BeritaModel::latest()->limit(15)->get()
+      'berita'  => Berita::latest()->limit(15)->get()
     ]);
   }
 
@@ -50,14 +50,6 @@ class DayahController extends Controller
     return view('identitas', [
       'title' => 'Identitas',
       'news'  => $this->berita
-    ]);
-  }
-
-  public function berita()
-  {
-    return view('berita', [
-      'title'   => 'Berita',
-      'berita'  => BeritaModel::all(),
     ]);
   }
 }
