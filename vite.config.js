@@ -8,6 +8,7 @@ export default defineConfig({
         "resources/css/app.css",
         "resources/js/app.js",
         "public/styles/style.css",
+        "public/styles/trix.css",
         "public/scripts/function.js",
       ],
       refresh: true,
