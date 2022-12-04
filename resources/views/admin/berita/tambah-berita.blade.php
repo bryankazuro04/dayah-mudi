@@ -1,4 +1,4 @@
-@extends('admin.dashboard')
+@extends('template.dashboard')
 
 @section('main')
     <h1>test</h1>

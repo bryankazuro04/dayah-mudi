@@ -1,4 +1,4 @@
-@extends('admin.dashboard')
+@extends('template.dashboard')
 
 @section('main')
   <h1 class="my-5 text-center">Penambahan Data Santri</h1>

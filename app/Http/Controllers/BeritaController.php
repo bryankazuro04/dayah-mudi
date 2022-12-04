@@ -16,7 +16,7 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        return view('admin.berita', [
+        return view('admin.berita.berita', [
             'title' => 'Berita',
             'berita' => Berita::all()
         ]);
@@ -61,7 +61,7 @@ class BeritaController extends Controller
      */
     public function show(Berita $beritum)
     {
-        return view('admin.berita-detail', [
+        return view('admin.berita.berita-detail', [
             'title' => 'Detail',
             'berita' => $beritum
         ]);
