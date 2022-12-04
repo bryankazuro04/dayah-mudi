@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Berita;
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
+use Illuminate\Support\Str;
 
 class BeritaController extends Controller
 {
@@ -27,7 +29,9 @@ class BeritaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.berita.tambah-berita', [
+            'title' => "Tambah Berita"
+        ]);
     }
 
     /**
@@ -38,7 +42,15 @@ class BeritaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'judul' => 'required',
+            'isi_berita' => 'required'
+        ]);
+
+        // $validatedData['excerpt'] = Str::limit(strip_tags($request->isi_berita), 100);
+
+        Berita::create($validatedData);
+        return redirect('/admin/dashboard/berita')->with('success', 'Berita berhasil ditambahkan!');
     }
 
     /**
@@ -47,11 +59,11 @@ class BeritaController extends Controller
      * @param  \App\Models\Berita  $berita
      * @return \Illuminate\Http\Response
      */
-    public function show(Berita $berita)
+    public function show(Berita $beritum)
     {
         return view('admin.berita-detail', [
             'title' => 'Detail',
-            'berita' => $berita
+            'berita' => $beritum
         ]);
     }
 
@@ -61,9 +73,12 @@ class BeritaController extends Controller
      * @param  \App\Models\Berita  $berita
      * @return \Illuminate\Http\Response
      */
-    public function edit(Berita $berita)
+    public function edit(Berita $beritum)
     {
-        //
+        return view('admin.berita.edit-berita', [
+            'title' => 'Edit',
+            'berita' => $beritum
+        ]);
     }
 
     /**
@@ -73,9 +88,22 @@ class BeritaController extends Controller
      * @param  \App\Models\Berita  $berita
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Berita $berita)
+    public function update(Request $request, Berita $beritum)
     {
-        //
+        $rules = [
+            'judul' => 'required',
+            'isi_berita' => 'required'
+        ];
+
+        if($request->slug != $beritum->slug) {
+            $rules['slug'] = 'required';
+        }
+
+        $validatedData = $request->validate($rules);
+
+        Berita::where('id', $beritum->id)->update($validatedData);
+        return redirect('/admin/dashboard/berita')->with('success', 'Berita berhasil diedit!');
+
     }
 
     /**
@@ -84,24 +112,31 @@ class BeritaController extends Controller
      * @param  \App\Models\Berita  $berita
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Berita $berita)
+    public function destroy(Berita $beritum)
     {
-        //
+        Berita::destroy($beritum->id);
+        return redirect('/admin/dashboard/berita')->with('success', 'Berita berhasil dihapus!');
     }
 
     public function berita()
     {
         return view('berita', [
             'title' => 'Berita',
-            'berita' => Berita::all()
+            'berita' => Berita::latest()->get()
         ]);
     }
 
-    public function tampilBerita($slug)
+    public function tampilBerita(Berita $berita)
     {
         return view('berita-detail', [
             'title' => 'Detail',
-            'berita' => Berita::find($slug)
+            'berita' => $berita
         ]);
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Berita::class, 'slug', $request->title);
+        return response()->json(['slug' => $slug]);
     }
 }
