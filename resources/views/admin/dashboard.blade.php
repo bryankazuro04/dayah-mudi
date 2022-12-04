@@ -8,7 +8,9 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
       
-    {{-- @vite(['public/styles/style.css', 'public/scripts/function.js']) --}}
+    {{-- @vite(['public/styles/style.css', "public/styles/trix.css", 'public/scripts/function.js']) --}}
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
 
     <link rel="shortcut icon" href="../images/logo/logo-dayah.png" type="image/x-icon">
 
