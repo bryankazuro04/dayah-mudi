@@ -19,7 +19,7 @@ class BeritaFactory extends Factory
         return [
             'judul' => fake()->sentence(mt_rand(3, 5)),
             'slug' => fake()->unique()->slug(),
-            'isi_berita' => fake()->paragraph(10)
+            'isi_berita' => collect(fake()->paragraphs(mt_rand(6, 10)))->map(fn($isi) => "<p>$isi</p>")->implode('')
         ];
     }
 }
