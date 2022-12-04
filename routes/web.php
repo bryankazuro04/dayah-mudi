@@ -35,4 +35,5 @@ Route::get('/admin/dashboard', [AdminController::class, 'index'])->middleware('a
 Route::get('/admin/data-santri', [SantriController::class, 'index'])->middleware('auth');
 Route::get('/admin/penambahan-data-santri', [SantriController::class, 'penambahanDataSantri'])->middleware('auth');
 Route::post('/admin/penambahan-data-santri', [SantriController::class, 'store']);
+Route::get('/admin/dashboard/berita/createSlug', [BeritaController::class, 'checkSlug']);
 Route::resource('/admin/dashboard/berita', BeritaController::class)->middleware('auth');
