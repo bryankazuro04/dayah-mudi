@@ -11,15 +11,15 @@ button {
   cursor: pointer;
 }
 
-.danger:hover{
+.danger:hover {
   color: var(--bs-danger);
 }
 
-.info:hover{
+.info:hover {
   color: var(--bs-info);
 }
 
-.warning:hover{
+.warning:hover {
   color: var(--bs-warning);
 }
 
@@ -32,12 +32,12 @@ button {
   flex-direction: column;
 }
 
-.dropdown-account{
+.dropdown-account {
   left: auto !important;
   right: 0;
 }
 
-.card-text{
+.card-text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: no-wrap;
@@ -47,7 +47,7 @@ button {
   line-clamp: 4;
 }
 
-.dashboard-sidebar{
+.dashboard-sidebar {
   border-inline-end: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 4rem;
   min-height: calc(100vh - 6rem);
@@ -57,23 +57,27 @@ button {
   left: 0;
 }
 
-.dashboard-sidebar .nav-link{
+.dashboard-sidebar .nav-link {
   color: #333;
 }
 
 .dashboard-sidebar .nav-link:hover {
-  color: rgba(51, 51, 51, .7);
+  color: rgba(51, 51, 51, 0.7);
 }
 
 .dashboard-sidebar .nav-link.active {
   color: #2470dc;
 }
 
-.isi-berita{
+.isi-berita {
   max-width: 20rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+trix-toolbar [data-trix-button-group="file-tools"] {
+  display: none !important;
 }
 
 @media (width <= 991px) {
