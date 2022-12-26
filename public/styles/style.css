@@ -123,7 +123,7 @@ trix-toolbar [data-trix-button-group="file-tools"] {
   display: none !important;
 }
 
-@media (width <= 991px) {
+@media (width <=991px) {
   .navbar .navbar-nav .nav-item.open {
     background-color: var(--nav-item-background);
     height: auto;
@@ -147,7 +147,7 @@ trix-toolbar [data-trix-button-group="file-tools"] {
   }
 }
 
-@media (width >= 992px) {
+@media (width >=992px) {
   .navbar .navbar-nav .nav-item:hover .nav-link {
     color: var(--nav-item-text) !important;
   }
@@ -159,6 +159,7 @@ trix-toolbar [data-trix-button-group="file-tools"] {
   }
 
   .navbar .navbar-nav .nav-item .nav-item-content {
+    margin-top: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 0 0 10px 10px;
     padding: 0.5rem 1rem;
