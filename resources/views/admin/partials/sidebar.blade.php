@@ -1,6 +1,6 @@
-<aside class="dashboard-sidebar col-lg-2 bg-light ps-2">
-  <ul class="nav flex-column">
-    <li class="nav-item">
+<aside class="dashboard-sidebar col-lg-2 px-0">
+  <ul class="nav flex-column gap-2">
+    <li class="nav-item {{ Request::is('admin/data-santri') ? 'active' : '' }}">
       <a href="/admin/data-santri" class="nav-link {{ Request::is('admin/data-santri') ? 'active' : '' }} py-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
           <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
@@ -8,7 +8,7 @@
       </a>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item {{ Request::is('admin/penambahan-data-santri') ? 'active' : '' }}">
       <a href="/admin/penambahan-data-santri" class="nav-link {{ Request::is('admin/penambahan-data-santri') ? 'active' : '' }} py-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
           <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
@@ -17,7 +17,7 @@
       </a>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item {{ Request::is('admin/dashboard/berita*') ? 'active' : '' }}">
       <a href="/admin/dashboard/berita" class="nav-link {{ Request::is('admin/dashboard/berita*') ? 'active' : '' }} py-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
           <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
